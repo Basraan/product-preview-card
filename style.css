@@ -1,0 +1,212 @@
+
+ @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@100;700&family=Montserrat:ital,wght@0,500;0,700;1,200&display=swap');
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---Colors-----
+ ---Primary */
+:root{
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+
+    /* Neutral color*/
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+/* .container{
+    background-color: var(--White);
+    margin: 60px;
+    display: flex;
+    border-radius: 0.625rem;
+    box-shadow: 5px,5px,5px,rgba(0,0,0,0.5);
+    margin-bottom: 1rem;
+    height: calc(50vh - 1px);
+    width: calc(60vw - 1px);
+} */
+/* img{
+    max-width: 100%;
+}
+.container img{
+    border-radius: 5px,5px,rgba(0,0,0,0.5);
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    border-radius:2rem;
+    height: calc(50vh - 1px);
+    width: calc(30vw - 1px);
+
+
+} */
+/* .container h1{
+    text-align: center;
+    font-family: 'Fraunces';
+    font-weight: 800;
+    font-size: 30px;
+    
+    
+} */
+/* .container h4{
+    text-align: left;
+    margin: 2rem;
+    font-weight: 500;
+    font-weight:100;
+    font-size: 25px;
+    font-family: "Fraunces";
+} */
+/* .container p{
+    margin: 6px;
+    text-align: center;
+    font-size: 17px;
+    justify-content: center;
+    font-family: "montseret",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+    
+} */
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+ul {
+    list-style-type: none;
+}
+body{
+    background-color: hsl(30, 38%, 92%);
+    font-size: 14px;
+    font-family: "montseret",sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    /* height: calc(100vh - 1px);
+    margin-bottom: 2rem; */
+    min-height: calc(100vh - 0.1px);
+    margin: 0 1.5rem;
+}
+h1{
+    color: hsl(212, 21%, 14%);;
+}
+.price{
+    color: hsl(158, 36%, 37%);
+
+}
+h2{
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: hsl(228, 12%, 48%);
+    margin-bottom: 1rem;
+    letter-spacing: 0.2rem;
+
+}
+h1 .price{
+    font-family: "fraunces",sans-serif;
+}
+
+p{
+    color: hsl(228, 12%, 48%);
+    line-height: 1.8;
+}
+
+/* .button{
+    background-color: var(--Dark-cyan);
+    margin: 1rem;
+    border-radius: 4px;
+    color: var(--White)
+} */
+
+.container {
+    max-width: 600px;
+    margin:2rem;
+
+}
+.container img{
+    max-width: 600px;}
+.container article:first-child img{
+    border-radius: 1rem 1rem 0 0;
+}
+.container article:last-child{
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0 0 1rem 1rem;
+    margin-top: -1rem;
+}
+button, li{
+    font-family: inherit;
+}
+.container h1{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-family: 'Fraunces';
+}
+.container p{
+    margin-bottom: 2rem;
+}
+.container ul{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.container ul li:first-child{
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-family: 'Fraunces';
+    font-weight: bold;
+}
+.container ul li:nth-child(2){
+    color: var(--Dark-grayish-blue);
+}
+.container .btn{
+    background-color: var(--Dark-cyan);
+    color: #fff;
+    font-weight: 700;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    width: 100%;
+    border: none;
+    border-radius: 1rem 1rem 1rem 1rem;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+
+
+}
+.container .btn img{
+    margin-right: 0.5rem;
+}
+.container .btn:hover{
+    background-color: hsl(158, 69%, 14%);
+
+}
+@media (min-width:640px) {
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        border-radius: 0.625rem;
+        margin: 2rem;
+    }
+    .container article:first-child img{
+        border-radius: 0.625rem 0 0 0.625rem;
+        height: 100%;
+        width: 100%;
+    }
+    .container article:last-child {
+        border-radius: 0 0.625rem 0.625rem 0;
+        margin-top: 0;
+
+    }
+}
+
